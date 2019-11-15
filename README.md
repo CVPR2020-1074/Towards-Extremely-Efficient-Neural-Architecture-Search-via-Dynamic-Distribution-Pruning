@@ -1,6 +1,6 @@
 # Towards Extremely Efﬁcient Neural Architecture Search via Dynamic Distribution Pruning
 
-There is the code of the paper ``Towards Extremely Efﬁcient Neural Architecture Search via Dynamic Distribution Pruning`` for searching and network generation.
+There is the code of the paper ``Towards Extremely Efﬁcient Neural Architecture Search via Dynamic Distribution Pruning`` for network searching and generation.
 
 
 ## Searching
@@ -9,7 +9,7 @@ There is the code of the paper ``Towards Extremely Efﬁcient Neural Architectur
 git clone https://github.com/CVPR2020-1074/Towards-Extremely-Efficient-Neural-Architecture-Search-via-Dynamic-Distribution-Pruning.git
 cd Towards-Extremely-Efficient-Neural-Architecture-Search-via-Dynamic-Distribution-Pruning
 ```
-check the config file in ./utils/config.py
+Change the config file in ./utils/config.py, then run
 
 ```
 python train_search.py
@@ -18,7 +18,8 @@ python train_search.py
 
 
 ## Network generation
-set the search dir in line 118 of ./network_generator.py
+
+Set the search dir in ./network_generator.py, then run
 
 ```bash
 python network_generator.py
@@ -28,4 +29,4 @@ The script will generate the neural genotypes with different height and model si
 
 ## Train
 
-For the network training, after get the model genotype, the network training can directly use the code in previous NAS work DARTS https://github.com/khanrc/pt.darts
+The network training can be done by directly using the code in previous NAS work DARTS https://github.com/khanrc/pt.darts
